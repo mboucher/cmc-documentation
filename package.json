@@ -1,10 +1,11 @@
 {
-  "name": "@adobe/helix-pages-starter",
+  "name": "@adobe/cmc-documentation-site",
   "private": true,
   "version": "1.0.0",
-  "description": "Starter project for Adobe Helix Pages",
+  "description": "Communicaiton Management Center Documentation Site",
   "scripts": {
     "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage",
+    "dev":"hlx up",
     "test:watch": "npm test -- --watch",
     "lint:js": "eslint .",
     "lint:css": "stylelint 'blocks/**/*.css' 'styles/*.css'",
@@ -12,24 +13,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adobe/helix-pages-starter.git"
+    "url": "git+https://github.com/mboucher/cmc-documentation.git"
   },
-  "author": "Adobe",
+  "author": "Marcel Boucher",
   "license": "Apache License 2.0",
   "bugs": {
-    "url": "https://github.com/adobe/helix-pages-starter/issues"
+    "url": "https://github.com/mboucher/cmc-documentation/issues"
   },
-  "homepage": "https://github.com/adobe/helix-pages-starter#readme",
+  "homepage": "https://github.com/mboucher/cmc-documentation#readme",
   "devDependencies": {
     "@babel/core": "7.17.10",
     "@babel/eslint-parser": "7.17.0",
+    "@esm-bundle/chai": "4.3.4-fix.0",
+    "@spectrum-css/button": "^6.0.10",
+    "@spectrum-css/icon": "^3.0.21",
+    "@spectrum-css/page": "^5.0.9",
+    "@spectrum-css/typography": "^4.0.18",
+    "@spectrum-css/vars": "^8.0.0",
+    "@web/test-runner": "0.13.27",
+    "@web/test-runner-commands": "0.6.1",
     "chai": "4.3.6",
     "eslint": "8.14.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.26.0",
-    "@esm-bundle/chai": "4.3.4-fix.0",
-    "@web/test-runner": "0.13.27",
-    "@web/test-runner-commands": "0.6.1",
     "sinon": "13.0.2",
     "stylelint": "14.8.1",
     "stylelint-config-prettier": "9.0.3",
